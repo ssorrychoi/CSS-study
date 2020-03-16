@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06</title>
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        border: 10px solid red;
+        height: 100vh;
+      }
+      .flex-item {
+        flex: 1 auto;
+      }
+      @media (min-width: 600px) {
+        .flex-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .flex-item {
+          width: 50%;
+          flex: 0 auto;
+        }
+      }
+      @media (min-width: 900px) {
+        .flex-item {
+          width: 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">
+        Lorem ipsum dolor sit,
+      </div>
+      <div class="flex-item">BBBBBBBB</div>
+      <div class="flex-item">CCCCCCCCCCC</div>
+      <div class="flex-item">DDDDDDD</div>
+      <div class="flex-item">BBBBBBBB</div>
+      <div class="flex-item">CCCCCCCCCCC</div>
+      <div class="flex-item">DDDDDDD</div>
+      <div class="flex-item">BBBBBBBB</div>
+      <div class="flex-item">CCCCCCCCCCC</div>
+      <div class="flex-item">DDDDDDD</div>
+    </div>
+  </body>
+</html>
