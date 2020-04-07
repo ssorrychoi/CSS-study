@@ -229,7 +229,7 @@ align-item: center;
 기본 HTML 구조
 
 ```html
-<div class="container">
+<div class="grid-container">
 	<div class="item">A</div>
 	<div class="item">B</div>
 	<div class="item">C</div>
@@ -240,5 +240,22 @@ align-item: center;
 	<div class="item">H</div>
 	<div class="item">I</div>
 </div>
+```
+
+```css
+.grid-container {
+        display: grid;
+        /* grid-column */
+        /* grid-template-columns: 100px 300px 200px; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        /* grid-template-columns: 1fr 500px 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr 2fr 1fr); */
+
+        /* grid-row */
+        /* grid-template-rows: 200px 200px auto; */
+        grid-template-rows: repeat(2, 1fr);
+        height: 80vh;
+      }
 ```
 
